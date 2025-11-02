@@ -7,21 +7,22 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
 </head>
 
 <body>
   <h1>Starting Lineup</h1>
-  <!-- <form id="starting_lineup" action="" method="get"> -->
+
     <!-- Status -->
     <p>
       <fieldset>
         <legend>Status:</legend>
         <p class="radio">
-          <input id="draft" type="radio" name="status">
+          <input value="Draft" id="draft" type="radio" name="status">
           <label for="draft">Draft</label>
         </p>
         <p class="radio">
-          <input id="final" type="radio" name="status" checked>
+          <input value="Final" id="final" type="radio" name="status" checked>
           <label for="final">Final</label>
         </p>
       </fieldset>
@@ -29,12 +30,12 @@
     <!-- Date -->
     <p class="date">
       <label for="date-select">Date:</label>
-      <select name="date" id="date-select">
-        <option value="March_20">March 20</option>
-        <option value="March_24">March 24</option>
-        <option value="April_2">April 2</option>
-        <option value="April_6">April 6</option>
-        <option value="April_13">April 13</option>
+      <select name="gameDate" id="date-select">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
       </select>
     </p>
     <!-- Players -->
@@ -42,23 +43,23 @@
       <fieldset>
         <legend>Players:</legend>
         <p class="checkbox">
-          <input id="arav_agarwal" type="checkbox" name="players">
+          <input id="arav_agarwal" value = "Aarav Agarwal" type="checkbox" name="players">
           <label for="arav_agarwal">Aarav Agarwal</label>
         </p>
         <p class="checkbox">
-          <input id="avs_johnson" type="checkbox" name="players">
+          <input id="avs_johnson" value = "Avs Johnson" type="checkbox" name="players">
           <label for="avs_johnson">Avs Johnson</label>
         </p>
         <p class="checkbox">
-          <input id="julio_ortiz" type="checkbox" name="players">
+          <input id="julio_ortiz" value = "Julio Ortiz" type="checkbox" name="players">
           <label for="julio_ortiz">Julio Ortiz</label>
         </p>
         <p class="checkbox">
-          <input id="liam_rubio" type="checkbox" name="players">
+          <input id="liam_rubio" value = "Liam Rubio" type="checkbox" name="players">
           <label for="liam_rubio">Liam Rubio</label>
         </p>
         <p class="checkbox">
-          <input id="emma_witherspoon" type="checkbox" name="players">
+          <input id="emma_witherspoon" value = "Emma Witherspoon" type="checkbox" name="players">
           <label for="emma_witherspoon">Emma Witherspoon</label>
         </p>
       </fieldset>
@@ -66,7 +67,7 @@
     <p class="submit">
       <input type="submit" id="submitButton">
     </p> 
-  <!-- </form> -->
+    <div id="results"></div>
 </body>
 
 </html>
